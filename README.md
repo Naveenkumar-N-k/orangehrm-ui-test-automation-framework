@@ -8,10 +8,7 @@ The framework follows the **Page Object Model (POM)** design pattern, promoting:
 
 The framework implements the following test scenario:
 - An employee onboarding workflow
-  1. Admin login.
-  2. Employee registration.
-  3. Directory verification.
-  4. Login credential validation.
+  - admin login → new employee registration → directory verification → new employee login credential validation
 
 ## Playwright Test Report
 This is the video recording of the UI automation (showing successful employee onboarding workflow):
