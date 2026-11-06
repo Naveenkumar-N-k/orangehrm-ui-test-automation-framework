@@ -6,18 +6,17 @@ The framework follows the **Page Object Model (POM)** design pattern, promoting:
 - **Scalability** - Easier to extend the framework to accommodate more Page objects & test scenarios.
 - **Maintainability** - Keeps the Page objects logic (locators, actions, assertions) separate from test scripts for better organization & easier maintenance.
 
-The framework covers:
-- It automates an employee onboarding workflow
-  - 1. Admin login.
-  - 2. Employee registration.
-  - 3. Directory verification. 
-  - 4. Login credential validation.
+The framework implements the following test scenario:
+- An employee onboarding workflow
+  1. Admin login.
+  2. Employee registration.
+  3. Directory verification.
+  4. Login credential validation.
 
 ## Playwright Test Report
 This is the video recording of the UI automation (showing successful employee onboarding workflow):
 
 https://github.com/user-attachments/assets/f6a50f5a-a2a0-402e-aa17-1bb10b2ea9c9
-
 
 ## Tech Stack
 - **Playwright** - Automation framework
