@@ -1,28 +1,30 @@
-About:
+## Project Overview
+This project is an UI Test Automation Framework developed to automate the Orange HRM website for UI testing.
 
-→ This is an end-to-end UI test automation framework built using Playwright and TypeScript, following the Page Object Model (POM) design pattern.
+The framework follows the **Page Object Model (POM)** design pattern, promoting:
+- **Reusability** - Can re-use page object methods across multiple test cases.
+- **Scalability** - Easier to extend the framework to accommodate more Page objects & test scenarios.
+- **Maintainability** - Keeps the Page objects logic (locators, actions, assertions) separate from test scripts for better organization & easier maintenance.
 
-→ It automates an employee onboarding workflow, including login, employee registration, directory verification, and credential validation.
+The framework covers:
+- It automates an employee onboarding workflow
+  - 1. Admin login.
+  - 2. Employee registration.
+  - 3. Directory verification. 
+  - 4. Login credential validation.
 
-→ The framework is designed to improve test stability, maintainability, and reusability using modern automation practices.
-
-Setup:
-
-1. Clone the above repository → ```git clone <url>```
-
-2. Install Node.js dependencies → ```npm install```
-
-3. Install Playwright browsers → ```npx playwright install```
-
-Running tests:
-
-• Run all tests → ```npx playwright test```
-    
-• View HTML test report → ```npx playwright show-report```
-
----------------------------------------------------------------------------------------------------------
-
-
-Video File Report:
+## Playwright Test Report
+This is the video recording of the UI automation (showing successful employee onboarding workflow):
 
 https://github.com/user-attachments/assets/f6a50f5a-a2a0-402e-aa17-1bb10b2ea9c9
+
+
+## Tech Stack
+- **Playwright** - Automation framework
+- **TypeScript** - Programming language
+- **Node.js** - JavaScript runtime environment
+
+## Project Structure
+The framework is organized into following components:
+- *pages/*: Contains page classes (.ts files) representing different pages in the website. Each class encapsulates it's own locators, actions, assertions, reusable methods (a significant unit of flow is defined in the class methods (composed of actions, locators, assertions)) for interacting with the HTML elements.
+- *tests/*: Contains test scripts that utilize the page classes to implement the test cases with the help of re-usable class methods.

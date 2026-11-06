@@ -4,7 +4,7 @@ import { PIMInHomePage, EmployeeDataType} from '../pages/home-page';
 import employeeData from '../test-data/employee-data.json' with {type:"json"};
 
 // New Employee Registration & Validation
-test('New-Employee-Registration-and-Validation', async({page})=>{
+test('new employee registration and validation', async({page})=>{
 	// Page Objects
 		const loginPageIs:LoginPage = new LoginPage(page);
 		const PIMInHomePageIs:PIMInHomePage = new PIMInHomePage(page);
